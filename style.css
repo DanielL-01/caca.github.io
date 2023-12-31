@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: pink;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.first p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.first button {
+    font-size: 25px;
+    border-radius: 30%;
+    padding: 10px;
+}
+
+.second {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.second img {
+    width: 400px;
+    height: 400px;
+    /* animation: flower 1s ease-in; */
+}
+
+@keyframes flower {
+    0% {
+        width: 1px;
+        height: 1px;
+        filter: blur(5px);
+    }
+    100% {
+        width: 400px;
+        height: 400px;
+        filter: blur(0);
+    }
+}
+
+.second .note {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: note 1s ease-in 1s; */
+    opacity: 0;
+    text-align: center;
+    margin: 0 10px;
+}
+
+@keyframes note {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  
+  .bg_heart {
+        display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+   }
+  
+  .heart {
+      position: absolute;
+      top: -50%;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -m-transform: rotate(-45deg);
+      transform: rotate(-45deg)
+   }
+  
+  .heart:before {
+      position: absolute;
+      top: -50%;
+      left: 0;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      border-radius: 100%;
+  }
+  
+  .heart:after {
+      position: absolute;
+      top: 0;
+      right: -50%;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      border-radius: 100%;
+  }
+  
+  @-webkit-keyframes love {
+    0%{top:110%}
+  }
+  @-moz-keyframes love {
+    0%{top:110%}
+  }
+  @-ms-keyframes love {
+    0%{top:110%}
+  }
+  @keyframes love {
+    0%{top:110%}
+  }
